@@ -1,0 +1,16 @@
+{
+  "name": "Taj Fast Food Corner - Smart Business Manager",
+  "short_name": "Taj Manager",
+  "description": "Offline-first sales and business manager for Taj Fast Food Corner",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff8f0",
+  "theme_color": "#d84315",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
