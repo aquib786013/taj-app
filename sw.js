@@ -1,8 +1,8 @@
 /* Service worker: makes the app open and work with no internet.
    Network-first (so updates show up as soon as you are online), cache fallback (so it still opens offline).
    Change CACHE name when you release a new version. */
-const CACHE = 'taj-v1';
-const ASSETS = ['./', 'index.html', 'style.css', 'logic.js', 'db.js', 'app.js', 'manifest.json', 'icon-192.png', 'icon-512.png'];
+const CACHE = 'taj-v2';
+const ASSETS = ['./', 'index.html', 'style.css', 'logic.js', 'db.js', 'sync.js', 'app.js', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(ASSETS); }).then(function () { return self.skipWaiting(); }));

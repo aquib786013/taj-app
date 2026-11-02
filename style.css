@@ -50,3 +50,28 @@ ul{list-style:none;padding:0;margin:8px 0}li{display:flex;justify-content:space-
 #modal{position:fixed;inset:0;background:#0007;z-index:15;display:flex;align-items:flex-end;justify-content:center}
 .sheet{background:#fff;width:100%;max-width:640px;border-radius:16px 16px 0 0;padding:16px;max-height:90vh;overflow:auto}
 .sheet .row .btn{flex:1}
+
+/* ---- Stage 2 ---- */
+.hidden{display:none!important}
+.hr{display:flex;align-items:center;gap:8px}
+#syncBtn{background:#fff3;border:1px solid #fff6;color:#fff;border-radius:50%;width:34px;height:34px;font-size:18px;line-height:1}
+#syncBtn.spin{animation:sp 1s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+.pill.warn{background:#ef6c00}.pill.bad{background:#c62828}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:16px 10px;display:flex;flex-direction:column;align-items:center;gap:2px;font:inherit;color:var(--tx)}
+.tile span{font-size:28px}.tile small{color:var(--mu);font-size:12px}.tile:active{background:#ffe9e0}
+.back{margin-bottom:6px}
+.btns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.btns .btn.sm{padding:8px 12px}
+.small{font-size:12px}.okc{color:var(--ok)}.badc{color:var(--bad)}
+.tag.red{background:#ffebee;color:var(--bad)}
+.scroll{overflow-x:auto}.tbl{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1px solid var(--ln);border-radius:8px}
+.tbl th,.tbl td{padding:6px 8px;border-bottom:1px solid var(--ln);text-align:right;white-space:nowrap}
+.tbl th:first-child,.tbl td:first-child{text-align:left}
+.tbl.pl td{white-space:normal;font-size:15px}.tbl.pl td:last-child{font-weight:700;white-space:nowrap}
+.tbl.pl tr.sub td{background:#fff3e8}.tbl.pl tr.net td{font-size:17px}.tbl.pl tr.pos td:last-child{color:var(--ok)}.tbl.pl tr.neg td:last-child{color:var(--bad)}
+.seg{display:flex;margin-bottom:10px}.seg button{flex:1;padding:10px;border:1px solid var(--p);background:#fff;color:var(--p);font:inherit;font-weight:600}
+.seg button:first-child{border-radius:10px 0 0 10px}.seg button:last-child{border-radius:0 10px 10px 0}.seg button.on{background:var(--p);color:#fff}
+.syncbox{background:#fff8f0;border:1px solid var(--ln);border-radius:8px;padding:8px;margin-bottom:10px;font-size:14px}
+.two3{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end;margin-top:10px}
+.wph{max-width:100%;max-height:160px;border-radius:8px;margin-top:6px}
+.sheet .li{padding:6px 0;border-bottom:1px solid var(--ln)}
